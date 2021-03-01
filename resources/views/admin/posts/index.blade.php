@@ -26,7 +26,7 @@
       <td>{{$post->created_at}}</td>
       <td>{{$post->updated_at}}</td>
       <td>
-        <a href="#" class="btn btn-primary" style="margin-bottom: 10px">Leggi</a>
+        <a href="{{route('admin.posts.show', ['post'=>$post->id])}}" class="btn btn-primary" style="margin-bottom: 10px">Leggi</a>
         <a href="#" class="btn btn-warning" style="margin-bottom: 10px">Modifica</a>
         <a href="#" class="btn btn-danger">Elimina</a>
       </td>
