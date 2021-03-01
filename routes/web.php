@@ -27,7 +27,7 @@ Route::get('/contacts', 'PageController@contacts')->name('contacts');
 // ****************************************
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
   Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
 
