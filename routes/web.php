@@ -21,6 +21,8 @@ Route::get('/', 'PageController@index')->name('homepage');
 Route::get('/about', 'PageController@about')->name('about');
 Route::get('/contacts', 'PageController@contacts')->name('contacts');
 
+Route::get('/blog', 'PostController@index')->name('index');
+
 
 // ****************************************
 // PARTE VISIBILE SOLO ALL'ADMIN
